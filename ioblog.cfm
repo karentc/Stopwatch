@@ -13,7 +13,7 @@
 
 <!--  Text box.   -->
 <p> 
-New blog entry: <cfinput type="Text" name="name" size="10" maxlength="10"> 
+Your entry has been successfully submitted! <cfinput type="Text" name="comments">
 </p> 
 
 
