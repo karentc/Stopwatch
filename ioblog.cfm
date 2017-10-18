@@ -21,6 +21,11 @@ Your entry has been successfully submitted! <cfinput type="Text" name="comments"
 <!-- submit button  -->
 <cfinput type="Submit" name="SubmitForm" value="Submit"> 
 
+
+
+
+
+<!-- Search results ??? -->
 <cfsearch  
     name = "codecoll_results" 
     collection = "CodeColl" 
@@ -30,10 +35,6 @@ Your entry has been successfully submitted! <cfinput type="Text" name="comments"
     maxrows = "100"> 
 
 
-
-
-  <!-- Search results ??? -->
- 
 <h2>Search Results</h2> 
 <cfoutput> 
 Your search returned #codecoll_results.RecordCount# file(s). 
