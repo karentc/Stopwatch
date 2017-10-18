@@ -1,19 +1,23 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
+<html> 
+<head> 
+<title>Input form</title> 
+</head> 
+<body> 
+<!-- - Specify the action page in the form tag. The form variables will  -->
+<!--  pass to this page when the form is submitted.    -->
 
-   Choose your favorite color:
-<br>
-   <a href="URLAction.cfm?favecolor=Green">Green</a>
-<br>
-   <a href="URLAction.cfm?favecolor=Red">Red</a>
-<br>
-   <a href="URLAction.cfm?favecolor=Blue">Blue</a>
-<br>
+<cfform action="actionpage.cfm" method="post"> 
+
+<!--  Text box.   -->
+<p> 
+New blog entry: <cfinput type="Text" name="Salary" size="10" maxlength="10"> 
+</p> 
 
 
-</body>
+
+<!-- submit button  -->
+<cfinput type="Submit" name="SubmitForm" value="Submit"> 
+
+</cfform> 
+</body> 
 </html>
