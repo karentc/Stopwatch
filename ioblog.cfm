@@ -21,6 +21,34 @@ Your entry has been successfully submitted! <cfinput type="Text" name="comments"
 <!-- submit button  -->
 <cfinput type="Submit" name="SubmitForm" value="Submit"> 
 
+<cfsearch  
+    name = "codecoll_results" 
+    collection = "CodeColl" 
+    criteria = "#Form.criteria#" 
+    contextPassages = "1" 
+    contextBytes = "300" 
+    maxrows = "100"> 
+
+
+
+
+  <!-- Search results ??? -->
+ 
+<h2>Search Results</h2> 
+<cfoutput> 
+Your search returned #codecoll_results.RecordCount# file(s). 
+</cfoutput> 
+ 
+<cfoutput query="codecoll_results"> 
+    <p> 
+    File: <a href="#URL#">#Key#</a><br> 
+    Document Title (if any): #Title#<br> 
+    Score: #Score#<br> 
+    Summary: #Summary#<br> 
+    Highlighted Summary: #context#</p> 
+</cfoutput> 
+
+
 </cfform> 
 </body> 
 </html>
