@@ -1,9 +1,9 @@
 #output {
 	width: 120px;
 	height: 25px;
-	font-family: 'Roboto', sans-serif;
 	font-size: 44px;
 }
+
 
 body {
   width: 80%;
@@ -11,8 +11,8 @@ body {
   margin: 20px auto;
   max-width: 180px;
   font-family: 'Roboto', sans-serif;
-
 }
+
 
 h1 {
 	letter-spacing: 8px;
@@ -22,27 +22,25 @@ h1 {
 	color: #b0b7b1;
 }
 
-#startPause {
+
+#start, #reset {
 	border-radius: 50px;
 	height: 75px;
 	width: 75px;
 	background: #537aad;
 	border: none;
 	color: white;
-	margin: 3px;
+	margin: 4px;
 	font-family: 'Roboto', sans-serif;
 	font-size: 18px;
 }
+
 
 #reset {
-	border-radius: 50px;
-	height: 75px;
-	width: 75px;
 	background: #e0851d;
-	border: none;
-	color: white;
-	margin: 3px;
-	font-family: 'Roboto', sans-serif;
-	font-size: 18px;
 }
 
+
+#start {
+	background: #537aad;
+}

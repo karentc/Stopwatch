@@ -1,25 +1,25 @@
 var time = 0;
 var running = 0;
 
-function startPause(){
+function start(){
 	if(running == 0){								
 		running = 1;
-		increment();
-		document.getElementById("startPause").innerHTML = "Pause";
+		count();
+		document.getElementById("start").innerHTML = "Pause";
 	}else{		
 		running = 0;														
-		document.getElementById("startPause").innerHTML = "Resume";
+		document.getElementById("start").innerHTML = "Resume";
 	}
 }
 
 function reset(){
 			running = 0;
 			time = 0;
-			document.getElementById("startPause").innerHTML = "Start";
+			document.getElementById("start").innerHTML = "Start";
 			document.getElementById("output").innerHTML = "00:00:00";
 }
 
-function increment(){
+function count(){
 	if(running == 1){
 		setTimeout(function(){
 			time++;
@@ -36,7 +36,7 @@ function increment(){
 
 
 			document.getElementById("output").innerHTML = mins + ":" + secs + ":" + "0" + tenths;
-			increment();
+			count();
 		}, 100,);
 	}
 }
